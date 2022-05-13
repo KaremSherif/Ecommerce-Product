@@ -1,0 +1,27 @@
+
+
+.hero{
+    position: relative;
+    .hero-img{
+        width: 100%;
+    }
+    .arrow{
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        background-color: $White;
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .previous{
+        left: 3%;
+    }
+    .next{
+        right: 3%;
+    }
+}

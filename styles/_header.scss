@@ -1,0 +1,99 @@
+
+
+.container{
+    // border: 1px solid black;
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        .left-group{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .humburger{
+                cursor: pointer;
+            }
+            .menu{
+                background-color: $Black;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100vh;
+                z-index: 99;
+
+                .close-menu{
+                    background-color: $White;
+                    height: 100vh;
+                    width: 65vw;
+                    padding: 2rem;
+                    img{
+                        transition: transform .5s ease;
+                        &:hover{
+                            cursor: pointer;
+                            transform: rotate(-180deg);
+                        }
+                    }
+                    ul{
+                        list-style: none;
+                        padding-top: 3rem;
+                        li{
+                            padding-bottom: 1rem;
+                            a{
+                                text-decoration: none;
+                                color: $Very-vark-blue;
+                                font-weight: 700;
+                                &:hover{
+                                    text-decoration: underline;
+                                    opacity: .75;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .hidden{
+                display: none;
+            }
+
+            .logo{
+                cursor: pointer;
+            }
+        }
+        .right-group{
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+            .btnCard{
+                position: relative;
+                img{
+                   height: 20px;
+                   cursor: pointer;
+                }
+                .card-count{
+                    position: absolute;
+                    top: -.6rem;
+                    right: -25%;
+                    font-size: .8rem;
+                    padding: .1rem .4rem;
+                    background-color: $orange;
+                    color: $White;
+                    border-radius: 50%;
+                }
+            }
+            .avatar{
+                img{
+                    width: 30px;
+                    height: 30px;
+
+                    &:hover{
+                        border: 1px solid $orange;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -7,38 +7,103 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- StyleSheets -->
+  <link rel="stylesheet" href="styles/general.css">
+   <!-- FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div class="container">
+  <header>
+    <div class="left-group">
+      <div class="humburger">
+        <img src="images/icon-menu.svg" alt="Na">
+      </div>
+      <div class="menu hidden">
+        <div class="close-menu">
+          <img src="images/icon-close.svg" alt="NA">
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo"><img src="images/logo.svg" alt="NA"></div>
+      
+    </div>
+    <div class="right-group">
+      <div class="btnCard">
+        <img src="images/icon-cart.svg" alt="NA">
+        <span class="card-count">0</span>
+      </div>
+      <div class="avatar">
+        <img src="images/image-avatar.png" alt="Na">
+      </div>
+    </div>
+  </header>
+  <div class="hero">
+    <img src="images/image-product-1.jpg" alt="" class="hero-img">
+    <div class="previous arrow">
+      <img src="images/icon-previous.svg" alt="">
+    </div>
+    <div class="next arrow">
+      <img src="images/icon-next.svg" alt="">
+    </div>
   </div>
+  <section class="product">
+    <span class="company-name">Sneaker Company</span>
+    <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+    <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="pricing">
+        <div class="current">
+          <h2 class="price">$125.00</h2>
+          <span class="discount">50%</span>
+        </div>
+        <h2 class="old-price">$250.00</h2>
+      </div>
+      <div class="counter">
+        <div class="counter-manage">
+          <img class="minusBtn" src="images/icon-minus.svg" alt="decrease">
+          <span class="number">0</span>
+          <img class="plusBtn" src="images/icon-plus.svg" alt="increase">
+        </div>
+        <div class="submitBtn">
+          <img src="images/icon-cart.svg" alt="cart icon">
+          <p>Add to cart</p>
+        </div>
+      </div>
+  </section>
+</div>
+<!-- 
+Men
+Women
+About
+Contact
+
+
+
+Fall Limited Edition Sneakers
+
+These low-profile sneakers are your perfect casual wear companion. Featuring a 
+durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+$125.00
+50%
+$250.00
+
+0
+Add to cart
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div> -->
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 .product{
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 3rem 2rem;
     .company-name{
         color: $orange;
         text-transform: uppercase;
@@ -46,6 +46,42 @@
             text-decoration: line-through;
             font-size: 1rem;
             font-weight: 700;
+        }
+    }
+    .counter{
+        margin-top: 2rem;
+        .counter-manage{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $Light-grayish-blue;
+            border-radius: .4rem;
+            padding: 1.2rem .8rem;
+            .minusBtn, .plusBtn{
+                cursor: pointer;
+                &:hover{
+                    opacity: .5;
+                }
+            }
+        }
+        .addBtn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .8rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: .4rem;
+            margin-top: 1.5rem;
+            padding: 1rem .5rem;
+            background-color: $orange;
+            color: $White;
+            box-shadow: 0 1.5rem 0 0 $Pale-orange;
+            cursor: pointer;
+            img{
+                filter: brightness(100);
+            }
+            
         }
     }
 }
